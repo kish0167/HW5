@@ -166,11 +166,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: 5 layer
-  _description: you are dead
-  _answers: 
+  _locationName: The Mysterious Guide
+  _description: You discover a wise old hermit who claims to know about the relic's
+    thief. He offers to guide you.
+  _answers: '1. Accept His Help: Trust the hermit and follow him.
+
+    2. Refuse
+    His Help: Politely decline and continue alone.'
   _nextSteps:
-  - {fileID: 1446260785}
+  - {fileID: 1636767767}
+  - {fileID: 1636767767}
 --- !u!1 &227260107
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,10 +296,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: 2 layer
-  _description: you are feeling ok
-  _answers: 
+  _locationName: Clues in the Shadows
+  _description: At the scene, you discover strange footprints leading into the forest.
+    The path is dark and foreboding.
+  _answers: '1. Follow the Footprints: Head into the forest, following the trail.
+
+    2.
+    Return to the Village: Go back to gather supplies before pursuing.'
   _nextSteps:
+  - {fileID: 899202299}
   - {fileID: 1063692937}
 --- !u!1 &454879852
 GameObject:
@@ -946,6 +956,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &812439985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812439986}
+  - component: {fileID: 812439987}
+  m_Layer: 0
+  m_Name: Step (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &812439986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812439985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812439987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812439985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _locationName: The Relic's Chamber
+  _description: At the heart of the cave, you find the relic guarded by a shadowy
+    figure. The figure challenges you to prove your worth.
+  _answers: '1. Battle the Guardian: Fight the figure to claim the relic.
+
+    2.
+    Reason with the Guardian: Attempt to negotiate and prove your intentions.'
+  _nextSteps:
+  - {fileID: 1446260785}
 --- !u!1 &881044122
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1043,9 @@ Transform:
   - {fileID: 1063692936}
   - {fileID: 899202298}
   - {fileID: 215582378}
+  - {fileID: 1636767766}
+  - {fileID: 1016478294}
+  - {fileID: 812439986}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &893209233
@@ -1102,11 +1168,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: 4 layer
-  _description: you are feeling bad
-  _answers: 
+  _locationName: The Enchanted Forest
+  _description: The forest is dense and alive with the sounds of hidden creatures.
+    You feel an ominous presence watching you.
+  _answers: '1. Investigate the Presence: Search for what is watching you.
+
+    2.
+    Press Onward: Ignore it and continue following the footprints.'
   _nextSteps:
   - {fileID: 215582379}
+  - {fileID: 1636767767}
+--- !u!1 &1016478293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016478294}
+  - component: {fileID: 1016478295}
+  m_Layer: 0
+  m_Name: Step (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016478294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016478293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1016478295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016478293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _locationName: The Trial of Wits
+  _description: Inside the cave, you encounter a series of puzzles and illusions
+    designed to test your intelligence and resolve.
+  _answers: '1. Solve the Puzzles: Use your wits to overcome each trial.
+
+    2.
+    Search for Another Path: Look for an alternate route around the puzzles.'
+  _nextSteps:
+  - {fileID: 812439987}
+  - {fileID: 812439987}
 --- !u!1 &1063692935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,10 +1276,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: 3 layer
-  _description: you are feeling meh
-  _answers: 
+  _locationName: Preparing for the Journey
+  _description: The Elder provides you with a magical amulet that can light your
+    path and offers guidance on the journey ahead.
+  _answers: '1. Accept the Amulet and Advice: Take the amulet and head into the forest.
+
+    2.
+    Decline the Amulet: Venture into the forest relying on your instincts.'
   _nextSteps:
+  - {fileID: 899202299}
   - {fileID: 899202299}
 --- !u!1 &1446260783
 GameObject:
@@ -1200,11 +1330,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: 1 layer
-  _description: you are feeling great
-  _answers: 
+  _locationName: The Call to Adventure
+  _description: You wake up to a commotion in your village. The Elder gathers everyone
+    and announces that the sacred Relic of Dawn, which protects your village from
+    the encroaching darkness, has been stolen by a mysterious figure. As the chosen
+    one, it is your duty to retrieve it.
+  _answers: '1. Investigate the Scene: Look for clues where the relic was stolen.
+
+    2.
+    Consult the Elder: Seek advice from the Elder on what to do next.
+
+'
   _nextSteps:
   - {fileID: 370675853}
+  - {fileID: 1063692937}
+--- !u!1 &1636767765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636767766}
+  - component: {fileID: 1636767767}
+  m_Layer: 0
+  m_Name: Step (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636767766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636767765}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636767767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636767765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _locationName: The Hidden Cave
+  _description: You find a hidden cave entrance shrouded in magical mist. You feel
+    the relic's energy emanating from within.
+  _answers: '1. Enter the Cave Cautiously: Proceed with caution, aware of potential
+    traps.
+
+    2. Charge Into the Cave: Rush in, determined to recover the relic
+    quickly.'
+  _nextSteps:
+  - {fileID: 1016478295}
+  - {fileID: 812439987}
 --- !u!1 &1925449247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,8 +1559,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 96
+  m_fontSizeBase: 96
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1489,8 +1683,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280887593
-  m_fontColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1507,13 +1701,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
