@@ -122,6 +122,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &128400959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128400961}
+  - component: {fileID: 128400960}
+  m_Layer: 0
+  m_Name: Ending 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &128400960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128400959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 523d1543abe880b40948d3a02912512e, type: 3}
+  _locationName: The Corruption Within
+  _description: "In your haste to retrieve the relic, you succumb to its dark influence.
+    Although you return the relic to the village, its power begins to corrupt you,
+    leading to unrest and fear among the villagers. You become a tyrant, using the
+    relic\u2019s power for your own ends.\r\n"
+  _answers: 
+  _nextSteps: []
+  _karmaValues: 
+--- !u!4 &128400961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128400959}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215582377
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,16 +219,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: The Mysterious Guide
-  _description: You discover a wise old hermit who claims to know about the relic's
-    thief. He offers to guide you.
-  _answers: '1. Accept His Help: Trust the hermit and follow him.
+  _stepBG: {fileID: 21300000, guid: 62095604721ef2a429b409344511b042, type: 3}
+  _locationName: The Enchanted Forest
+  _description: The forest is dense and alive with the sounds of hidden creatures.
+    You feel an ominous presence watching you.
+  _answers: '1. Investigate the Presence: Search for what is watching you..
 
-    2. Refuse
-    His Help: Politely decline and continue alone.'
+    2.
+    Press Onward: Ignore it and continue following the footprints.'
   _nextSteps:
-  - {fileID: 1636767767}
-  - {fileID: 1636767767}
+  - {fileID: 1016478295}
+  - {fileID: 812439987}
+  _karmaValues: 0100000000000000
 --- !u!1 &227260107
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9607843, g: 0.5925116, b: 0.19607839, a: 0.22745098}
+  m_Color: {r: 0.48235294, g: 0.29326254, b: 0, a: 0.7647059}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -296,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: b0bc4d2f25d21344c98c15415f45b78c, type: 3}
   _locationName: Clues in the Shadows
   _description: At the scene, you discover strange footprints leading into the forest.
     The path is dark and foreboding.
@@ -304,8 +360,9 @@ MonoBehaviour:
     2.
     Return to the Village: Go back to gather supplies before pursuing.'
   _nextSteps:
-  - {fileID: 899202299}
+  - {fileID: 215582379}
   - {fileID: 1063692937}
+  _karmaValues: 0000000000000000
 --- !u!1 &454879852
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +716,7 @@ MonoBehaviour:
   _locationNameLabel: {fileID: 1979357797}
   _descriptionLabel: {fileID: 2051622120}
   _answerLabel: {fileID: 738428327}
+  _canvasBG: {fileID: 723881716}
   _startStep: {fileID: 1446260785}
   _currentStep: {fileID: 1446260785}
 --- !u!4 &649797990
@@ -676,6 +734,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667939566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667939567}
+  - component: {fileID: 667939568}
+  m_Layer: 0
+  m_Name: Step (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &667939567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667939566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667939568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667939566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 922609ae1074b4c43938ea7095bd65e5, type: 3}
+  _locationName: The Hidden Passage
+  _description: "You discover a hidden passage that leads directly to the relic,
+    bypassing most of the cave\u2019s defenses."
+  _answers: '1. Sneak to the Relic: Move quietly to avoid detection.
+
+    2. Create
+    a Diversion: Distract the guardian to make your approach.'
+  _nextSteps:
+  - {fileID: 1175892577}
+  - {fileID: 1175892577}
+  _karmaValues: 0100000001000000
 --- !u!1 &723881714
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,8 +915,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280887593
-  m_fontColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+    rgba: 4294046193
+  m_fontColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -819,8 +933,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -956,6 +1070,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &793072227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793072228}
+  - component: {fileID: 793072229}
+  m_Layer: 0
+  m_Name: Ending 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793072228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793072227}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &793072229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793072227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 523d1543abe880b40948d3a02912512e, type: 3}
+  _locationName: The Shattered Relic
+  _description: "In your attempt to negotiate, the guardian sees you as unworthy.
+    A struggle ensues, resulting in the relic being damaged beyond repair. Without
+    the relic\u2019s protection, darkness slowly engulfs the village, and you are
+    left with regret for what might have been."
+  _answers: 
+  _nextSteps: []
+  _karmaValues: 
 --- !u!1 &812439985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,15 +1167,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: The Relic's Chamber
-  _description: At the heart of the cave, you find the relic guarded by a shadowy
-    figure. The figure challenges you to prove your worth.
+  _stepBG: {fileID: 21300000, guid: bf747ae754a8af943911fcb872e84c5b, type: 3}
+  _locationName: The Hidden Cave
+  _description: You find a hidden cave entrance shrouded in magical mist. You feel
+    the relic's energy emanating from within.
+  _answers: '1. Enter the Cave Cautiously: Proceed with caution, aware of potential
+    traps.
+
+    2. Charge Into the Cave: Rush in, determined to recover the relic
+    quickly.
+
+    3. Scout the Perimeter: Check the surrounding area for hidden dangers.'
+  _nextSteps:
+  - {fileID: 1640392170}
+  - {fileID: 844285251}
+  - {fileID: 667939568}
+  _karmaValues: 010000000000000001000000
+--- !u!1 &844285249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844285250}
+  - component: {fileID: 844285251}
+  m_Layer: 0
+  m_Name: Step (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844285250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844285249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844285251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844285249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 3a1a42f9600dc3c45929f65b636e2456, type: 3}
+  _locationName: The Guardian's Test
+  _description: You come face to face with a powerful guardian who demands proof
+    of your worthiness.
   _answers: '1. Battle the Guardian: Fight the figure to claim the relic.
 
     2.
     Reason with the Guardian: Attempt to negotiate and prove your intentions.'
   _nextSteps:
-  - {fileID: 1446260785}
+  - {fileID: 1837245967}
+  - {fileID: 2029927867}
+  _karmaValues: 0000000002000000
 --- !u!1 &881044122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1276,17 @@ Transform:
   - {fileID: 1636767766}
   - {fileID: 1016478294}
   - {fileID: 812439986}
+  - {fileID: 2065607066}
+  - {fileID: 1640392169}
+  - {fileID: 844285250}
+  - {fileID: 667939567}
+  - {fileID: 1175892576}
+  - {fileID: 1837245966}
+  - {fileID: 2029927866}
+  - {fileID: 1404036048}
+  - {fileID: 128400961}
+  - {fileID: 2100149814}
+  - {fileID: 793072228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &893209233
@@ -1099,7 +1340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.8061296, b: 0.19517623, a: 1}
+  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0.8156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1168,16 +1409,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: The Enchanted Forest
-  _description: The forest is dense and alive with the sounds of hidden creatures.
-    You feel an ominous presence watching you.
-  _answers: '1. Investigate the Presence: Search for what is watching you.
+  _stepBG: {fileID: 21300000, guid: 292a858c3106ea24e800c223c294a865, type: 3}
+  _locationName: Gathering Allies
+  _description: You successfully rally a small group of villagers who are willing
+    to help you on your quest.
+  _answers: '1. Lead Them into the Forest: Together, you and the villagers head into
+    the forest.
 
-    2.
-    Press Onward: Ignore it and continue following the footprints.'
+    2. Send Them to Guard the Village: Ask them to protect the village
+    while you proceed alone.'
   _nextSteps:
-  - {fileID: 215582379}
   - {fileID: 1636767767}
+  - {fileID: 215582379}
+  _karmaValues: 0000000000000000
 --- !u!1 &1016478293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,16 +1466,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: The Trial of Wits
-  _description: Inside the cave, you encounter a series of puzzles and illusions
-    designed to test your intelligence and resolve.
-  _answers: '1. Solve the Puzzles: Use your wits to overcome each trial.
+  _stepBG: {fileID: 21300000, guid: 5dc413cf35950d148ba36ed7cba5819e, type: 3}
+  _locationName: The Mysterious Guide
+  _description: "You discover a wise old hermit who claims to know about the relic's
+    thief. He offers to guide you.\r\n\r"
+  _answers: '1. Accept His Help: Trust the hermit and follow him.
 
-    2.
-    Search for Another Path: Look for an alternate route around the puzzles.'
+    2. Refuse
+    His Help: Politely decline and continue alone.'
   _nextSteps:
-  - {fileID: 812439987}
-  - {fileID: 812439987}
+  - {fileID: 2065607067}
+  - {fileID: 2065607067}
+  _karmaValues: 0100000000000000
 --- !u!1 &1063692935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 84d5a04a78600dc40901fbb2f7243a4f, type: 3}
   _locationName: Preparing for the Journey
   _description: The Elder provides you with a magical amulet that can light your
     path and offers guidance on the journey ahead.
@@ -1284,8 +1531,118 @@ MonoBehaviour:
     2.
     Decline the Amulet: Venture into the forest relying on your instincts.'
   _nextSteps:
-  - {fileID: 899202299}
-  - {fileID: 899202299}
+  - {fileID: 215582379}
+  - {fileID: 215582379}
+  _karmaValues: 01000000ffffffff
+--- !u!1 &1175892575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175892576}
+  - component: {fileID: 1175892577}
+  m_Layer: 0
+  m_Name: Step (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175892576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175892575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1175892577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175892575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: c8639432749254a439744040d072286c, type: 3}
+  _locationName: The Relic's Chamber
+  _description: At the heart of the cave, you find the relic guarded by a shadowy
+    figure. The figure challenges you to prove your worth.
+  _answers: '1. Battle the Guardian: Fight the figure to claim the relic.
+
+    2.
+    Reason with the Guardian: Attempt to negotiate and prove your intentions.'
+  _nextSteps:
+  - {fileID: 1837245967}
+  - {fileID: 2029927867}
+  _karmaValues: 0000000000000000
+--- !u!1 &1404036046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404036048}
+  - component: {fileID: 1404036047}
+  m_Layer: 0
+  m_Name: Ending 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1404036047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404036046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: e96b3d2d324cceb419a79cb170ded8f9, type: 3}
+  _locationName: Heroic Triumph
+  _description: "You defeat the guardian in battle and retrieve the relic, returning
+    it to the village as a hero. The village is saved, and you are celebrated for
+    your bravery and strength. Peace is restored, and the village flourishes under
+    the relic\u2019s protection."
+  _answers: 
+  _nextSteps: []
+  _karmaValues: 
+--- !u!4 &1404036048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404036046}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446260783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 8b7b1c4d69f867e45948559f2319b27d, type: 3}
   _locationName: The Call to Adventure
   _description: You wake up to a commotion in your village. The Elder gathers everyone
     and announces that the sacred Relic of Dawn, which protects your village from
@@ -1340,10 +1698,16 @@ MonoBehaviour:
     2.
     Consult the Elder: Seek advice from the Elder on what to do next.
 
+    3. Rally
+    the Villagers: Gather a group of villagers to help you.
+
+
 '
   _nextSteps:
   - {fileID: 370675853}
   - {fileID: 1063692937}
+  - {fileID: 899202299}
+  _karmaValues: 000000000100000000000000
 --- !u!1 &1636767765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,17 +1752,130 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _locationName: The Hidden Cave
-  _description: You find a hidden cave entrance shrouded in magical mist. You feel
-    the relic's energy emanating from within.
-  _answers: '1. Enter the Cave Cautiously: Proceed with caution, aware of potential
-    traps.
-
-    2. Charge Into the Cave: Rush in, determined to recover the relic
-    quickly.'
+  _stepBG: {fileID: 21300000, guid: 37e73b0a8d000f148bd9decf0841167f, type: 3}
+  _locationName: Ambush in the Forest
+  _description: As you and the villagers make your way through the forest, you are
+    ambushed by a band of rogue creatures.
+  _answers: "1. Fight Together: Lead your allies in battle against the creatures.\n2.
+    Negotiate for Safe Passage: Attempt to reason with the creatures and secure safe
+    passage.\n3. Flee into the Shadows: Escape the ambush, losing the villagers in
+    the process.\r"
   _nextSteps:
+  - {fileID: 812439987}
   - {fileID: 1016478295}
   - {fileID: 812439987}
+  _karmaValues: 0100000001000000ffffffff
+--- !u!1 &1640392168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1640392169}
+  - component: {fileID: 1640392170}
+  m_Layer: 0
+  m_Name: Step (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1640392169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640392168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640392170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640392168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: 23019f03114858f4d8cbfaebf00b2160, type: 3}
+  _locationName: ' The Trial of Wits'
+  _description: 'Inside the cave, you encounter a series of puzzles and illusions
+    designed to test your intelligence and resolve.
+
+'
+  _answers: '1. Solve the Puzzles: Use your wits to overcome each trial.
+
+    2.
+    Search for Another Path: Look for an alternate route around the puzzles.'
+  _nextSteps:
+  - {fileID: 844285251}
+  - {fileID: 667939568}
+  _karmaValues: 0200000001000000
+--- !u!1 &1837245965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837245966}
+  - component: {fileID: 1837245967}
+  m_Layer: 0
+  m_Name: Auto step (Ending 1&2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837245966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837245965}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837245967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837245965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35d4893bbaa8c24a92521b7a6d5a4cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 0}
+  _locationName: _
+  _description: _
+  _answers: _
+  _nextSteps:
+  - {fileID: 1404036047}
+  - {fileID: 128400960}
+  _karmaValues: 0000000000000000
+  _minKarmaForStep: 04000000f6ffffff
 --- !u!1 &1925449247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8506657, g: 0.9607843, b: 0.19607839, a: 0.2901961}
+  m_Color: {r: 0.25776485, g: 0.3018868, b: 0, a: 0.6039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1541,8 +2018,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280887593
-  m_fontColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+    rgba: 4294046193
+  m_fontColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1609,6 +2086,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979357795}
   m_CullTransparentMesh: 1
+--- !u!1 &2029927865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2029927866}
+  - component: {fileID: 2029927867}
+  m_Layer: 0
+  m_Name: Auto step (Ending 3&4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2029927866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029927865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029927867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029927865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35d4893bbaa8c24a92521b7a6d5a4cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 0}
+  _locationName: _
+  _description: _
+  _answers: _
+  _nextSteps:
+  - {fileID: 2100149815}
+  - {fileID: 793072229}
+  _karmaValues: 0000000000000000
+  _minKarmaForStep: 05000000f6ffffff
 --- !u!1 &2051622117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,8 +2213,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282335039
-  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+    rgba: 4294046193
+  m_fontColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1743,6 +2273,113 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &2065607065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065607066}
+  - component: {fileID: 2065607067}
+  m_Layer: 0
+  m_Name: Step (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2065607066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065607065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2065607067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065607065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: f29874a58e6aeaf4691038d679387f02, type: 3}
+  _locationName: The Hermit's Secret
+  _description: "The hermit reveals a hidden path that leads directly to the heart
+    of the thief's lair,  bypassing many dangers.\r"
+  _answers: "1. Take the Hidden Path: Follow the hermit\u2019s secret route.\n2.
+    Continue on the Main Path: Stick to the known trail, prepared for challenges."
+  _nextSteps:
+  - {fileID: 667939568}
+  - {fileID: 1640392170}
+  _karmaValues: 0000000000000000
+--- !u!1 &2100149813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100149814}
+  - component: {fileID: 2100149815}
+  m_Layer: 0
+  m_Name: Ending 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2100149814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100149813}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 881044123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2100149815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100149813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa18cf27b6d717d4d914ff91998c3cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepBG: {fileID: 21300000, guid: e96b3d2d324cceb419a79cb170ded8f9, type: 3}
+  _locationName: The Shattered Relic
+  _description: "You successfully reason with the guardian, who recognizes your noble
+    intentions. The guardian allows you to take the relic and shares its wisdom with
+    you. You return to the village with a deeper understanding of the relic\u2019s
+    power, promoting harmony and prosperity."
+  _answers: 
+  _nextSteps: []
+  _karmaValues: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
